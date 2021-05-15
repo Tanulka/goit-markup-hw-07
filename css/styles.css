@@ -249,12 +249,12 @@ img {
 .section--without-indent {
   padding-bottom: 0;
 }
-.advantage-item {
+.advantage__item {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 4 * 30px) / 4);
 }
-.advantage .advantage-title {
+.advantage__title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -264,7 +264,7 @@ img {
 
   margin-bottom: 10px;
 }
-.box-advantage-icon {
+.advantage__box-icon {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -272,14 +272,14 @@ img {
   background-color: var(--grey-bg-color);
   margin-bottom: 30px;
 }
-.advantage-icon {
+.advantage__icon {
   width: 70px;
   height: 70px;
   fill: var(--title-text-color);
 }
 
 /* Примеры работ и команда h2 */
-.section .section-title {
+.section__title {
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -288,14 +288,14 @@ img {
   margin-bottom: 50px;
 }
 
-.item-example {
+.list-example__item {
   margin-left: 30px;
   margin-top: 30px;
   flex-basis: calc((100% - 3 * 30px) / 3);
 
   position: relative;
 }
-.title-example {
+.list-example__title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -312,10 +312,10 @@ img {
   bottom: 0;
 }
 /* Команда */
-.command {
+.section--grey-command {
   background-color: var(--grey-bg-color);
 }
-.list .list-card {
+.list__card {
   background-color: var(--primary-white-color);
   margin-left: 30px;
   margin-top: 30px;
@@ -324,20 +324,20 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.list .list-caption {
+.list__caption {
   color: var(--title-text-color);
   margin-bottom: 10px;
   text-align: center;
 }
-.list-card .card-info {
+.list__card .card-info {
   font-size: 16px;
   line-height: 1.19;
 }
-.text-card {
+.list__text-card {
   padding-top: 30px;
   padding-bottom: 16px;
 }
-.list-text {
+.list__text {
   text-align: center;
 }
 .social-icon {
