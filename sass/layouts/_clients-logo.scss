@@ -1,0 +1,31 @@
+.logo-list {
+  display: inline-flex;
+}
+.logo-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+.logo-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--social-icon-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo-list__link:hover,
+.logo-list__link:focus {
+  border-color: var(--accent-color);
+}
+.logo-list__icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--social-icon-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.logo-list__link:hover .logo-list__icon,
+.logo-list__link:focus .logo-list__icon {
+  fill: var(--accent-color);
+}
