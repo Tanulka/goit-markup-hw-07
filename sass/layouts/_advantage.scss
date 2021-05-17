@@ -2,9 +2,7 @@
   padding-bottom: 0;
 }
 .advantage__item {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% - 4 * 30px) / 4);
+  @extend %calc-for-4;
 }
 .advantage__title {
   font-size: 14px;

@@ -13,8 +13,7 @@
 }
 
 .hero--centre {
-  margin-right: auto;
-  margin-left: auto;
+  @extend %align-center;
 }
 .hero .container {
   display: flex;
@@ -26,6 +25,5 @@
 }
 .hero__button {
   padding: 10px 32px;
-  margin-right: auto;
-  margin-left: auto;
+  @extend %align-center;
 }
