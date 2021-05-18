@@ -482,8 +482,7 @@ img {
   transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter__btn:hover,
-.filter__btn:focus {
+.filter__btn:hover, .filter__btn:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -543,15 +542,15 @@ img {
   justify-content: center;
 }
 
-.social-icon__item {
+.social-icon .social-icon__item {
   padding-bottom: 30px;
 }
 
-.social-icon__item:not(:last-child) {
+.social-icon .social-icon__item:not(:last-child) {
   margin-right: 10px;
 }
 
-.social-icon__link {
+.social-icon .social-icon__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -562,17 +561,16 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-icon__link:hover .social-icon__svg,
-.social-icon__link:focus .social-icon__svg {
+.social-icon .social-icon__link:hover .social-icon__svg,
+.social-icon .social-icon__link:focus .social-icon__svg {
   fill: var(--primary-white-color);
 }
 
-.social-icon__link:hover,
-.social-icon__link:focus {
+.social-icon .social-icon__link:hover, .social-icon .social-icon__link:focus {
   background-color: var(--accent-color);
 }
 
-.social-icon__svg {
+.social-icon .social-icon__svg {
   width: 20px;
   height: 20px;
   fill: var(--social-icon-color);
@@ -892,8 +890,7 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__link:hover,
-.portfolio__link:focus {
+.portfolio__link:hover, .portfolio__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -1023,10 +1020,18 @@ img {
   padding-left: 42px;
 }
 
-.modal__field:focus,
-.feedback-field:focus {
+.modal__field:focus, .modal__field:focus {
   outline: none;
   border-color: var(--accent-color);
+}
+
+.modal__field:focus-within + .modal__icon-user {
+  fill: var(--accent-color);
+}
+
+.modal__field:-webkit-autofill, .modal__field:-webkit-autofill:hover, .modal__field:-webkit-autofill:focus {
+  -webkit-text-fill-color: var(--black-icon-color);
+  box-shadow: 0 0 0px 1000px var(--primary-white-color) inset;
 }
 
 .modal__icon-user {
@@ -1036,17 +1041,6 @@ img {
   position: absolute;
   left: 15px;
   top: 30px;
-}
-
-.modal__field:focus-within + .modal__icon-user {
-  fill: var(--accent-color);
-}
-
-.modal__field:-webkit-autofill,
-.modal__field:-webkit-autofill:hover,
-.modal__field:-webkit-autofill:focus {
-  -webkit-text-fill-color: var(--black-icon-color);
-  box-shadow: 0 0 0px 1000px var(--primary-white-color) inset;
 }
 
 .feedback-field {
@@ -1106,8 +1100,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.box-form .btn-actions:hover,
-.box-form .btn-actions:focus {
+.box-form .btn-actions:hover, .box-form .btn-actions:focus {
   background-color: #188ce8;
 }
 /*# sourceMappingURL=main.css.map */
